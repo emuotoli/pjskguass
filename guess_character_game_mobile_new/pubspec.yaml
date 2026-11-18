@@ -1,0 +1,46 @@
+name: guess_character_game_mobile_new
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0-270.0.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.1
+  just_audio: ^0.9.40
+  path_provider: ^2.1.3
+  shared_preferences: ^2.3.2
+  cached_network_image: ^3.4.0
+  flutter_cache_manager: ^3.4.0
+  video_player: ^2.8.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sd.jpg
+    - assets/bg_home.jpeg
+    - assets/bg_game.jpeg
+    - assets/bg_music.jpeg
+    - assets/miku.jpeg
+    - assets/photo/
+    - assets/data/musics.json
+    - assets/data/musics_full.json
+    - assets/data/music_categories.json
+    - assets/data/valid_music_ids.json
+    - assets/data/cards.json
+    - assets/data/extra_cards.json
+    - assets/data/mv_videos_matched.json
+    - assets/bg_music.mp3
+    - assets/bgm/
+    - kamian.png
+    - yinyue.png
+    - mv_icon.png

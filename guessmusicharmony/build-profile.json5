@@ -1,0 +1,30 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "store": "./signatures/debug.p7b",
+          "storePassword": "123456",
+          "keyAlias": "debugKey",
+          "keyPassword": "123456",
+          "profile": "./signatures/debug.p7b"
+        }
+      }
+    ]
+  },
+  "modules": {
+    "entry": {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "runtimeOS": "HarmonyOS",
+          "compatibleSdkVersion": "4.0.0(10)"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3703 @@
+[
+  {
+    "id": "res026_no002",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ワンダーランドのセカイ"
+  },
+  {
+    "id": "res026_no009",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "チェシャっとスマイル"
+  },
+  {
+    "id": "res026_no020",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "頼れる先輩達"
+  },
+  {
+    "id": "res026_no021",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "演奏であと押し"
+  },
+  {
+    "id": "res026_no029",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "秘密の思惑"
+  },
+  {
+    "id": "res026_no030",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Origin Style"
+  },
+  {
+    "id": "res026_no031",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Wonderland"
+  },
+  {
+    "id": "res026_no033",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.あひるのペックル"
+  },
+  {
+    "id": "res026_no037",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "見守ってきた想い"
+  },
+  {
+    "id": "res026_no045",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res026_no046",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "スマートアイドルスタイル"
+  },
+  {
+    "id": "res026_no050",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "セカイのアイドルファン"
+  },
+  {
+    "id": "res026_no055",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ほとばしるファン魂"
+  },
+  {
+    "id": "res026_no056",
+    "character": "KAITO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "パーティーにようこそ！"
+  },
+  {
+    "id": "res026_no001",
+    "character": "KAITO",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "涼やかな青い旋律"
+  },
+  {
+    "id": "res026_no014",
+    "character": "KAITO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！"
+  },
+  {
+    "id": "res026_no023",
+    "character": "KAITO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2023"
+  },
+  {
+    "id": "res026_no036",
+    "character": "KAITO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2024"
+  },
+  {
+    "id": "res026_no047",
+    "character": "KAITO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2025"
+  },
+  {
+    "id": "res026_no054",
+    "character": "KAITO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2026"
+  },
+  {
+    "id": "res025_no002",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ストリートのセカイ"
+  },
+  {
+    "id": "res025_no005",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "温かい眼差し"
+  },
+  {
+    "id": "res025_no009",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "答えを探して"
+  },
+  {
+    "id": "res025_no023",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "もっともっと支えるために"
+  },
+  {
+    "id": "res025_no024",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "優しさこそが力の源"
+  },
+  {
+    "id": "res025_no028",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Origin Style"
+  },
+  {
+    "id": "res025_no029",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Street"
+  },
+  {
+    "id": "res025_no033",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ニャニィニュニェニョン"
+  },
+  {
+    "id": "res025_no035",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "同じ胸の高鳴り"
+  },
+  {
+    "id": "res025_no043",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res025_no045",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "とっておきのアイディア"
+  },
+  {
+    "id": "res025_no047",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "熱いコンセプト"
+  },
+  {
+    "id": "res025_no049",
+    "character": "MEIKO",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.いちごっち"
+  },
+  {
+    "id": "res025_no001",
+    "character": "MEIKO",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "赤く駆ける旋律"
+  },
+  {
+    "id": "res025_no014",
+    "character": "MEIKO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！"
+  },
+  {
+    "id": "res025_no021",
+    "character": "MEIKO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2022"
+  },
+  {
+    "id": "res025_no031",
+    "character": "MEIKO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2023"
+  },
+  {
+    "id": "res025_no041",
+    "character": "MEIKO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2024"
+  },
+  {
+    "id": "res025_no052",
+    "character": "MEIKO",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2025"
+  },
+  {
+    "id": "res011_no002",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Vivid BAD SQUAD"
+  },
+  {
+    "id": "res011_no010",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "誇れる選択"
+  },
+  {
+    "id": "res011_no013",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Towards Legend"
+  },
+  {
+    "id": "res011_no019",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "それぞれの休日の過ごし方"
+  },
+  {
+    "id": "res011_no023",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "道中も大切な過程"
+  },
+  {
+    "id": "res011_no028",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "夜ふかしラーニング！"
+  },
+  {
+    "id": "res011_no029",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res011_no033",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.バッドばつ丸"
+  },
+  {
+    "id": "res011_no036",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "二度と見失わないように"
+  },
+  {
+    "id": "res011_no044",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res011_no048",
+    "character": "东云彰人",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "帰ってきた日常"
+  },
+  {
+    "id": "res011_no001",
+    "character": "东云彰人",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "一目置かれる実力者"
+  },
+  {
+    "id": "res011_no011",
+    "character": "东云彰人",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res011_no021",
+    "character": "东云彰人",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2022"
+  },
+  {
+    "id": "res011_no031",
+    "character": "东云彰人",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res011_no040",
+    "character": "东云彰人",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res011_no050",
+    "character": "东云彰人",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res019_no002",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "25時、ナイトコードで。"
+  },
+  {
+    "id": "res019_no005",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "マリオネットドレス"
+  },
+  {
+    "id": "res019_no010",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "言葉にしてほしくて"
+  },
+  {
+    "id": "res019_no017",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "体育祭の舞台裏"
+  },
+  {
+    "id": "res019_no026",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "もどかしさと後悔と、感謝"
+  },
+  {
+    "id": "res019_no029",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res019_no036",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "譲り受けたチケット"
+  },
+  {
+    "id": "res019_no041",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "25時の年はじめ"
+  },
+  {
+    "id": "res019_no042",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res019_no045",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "お揃いを手に"
+  },
+  {
+    "id": "res019_no052",
+    "character": "东云绘名",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "珍しいふたりで"
+  },
+  {
+    "id": "res019_no001",
+    "character": "东云绘名",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "SNS依存な絵描き"
+  },
+  {
+    "id": "res019_no016",
+    "character": "东云绘名",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res019_no027",
+    "character": "东云绘名",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res019_no035",
+    "character": "东云绘名",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res019_no044",
+    "character": "东云绘名",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res019_no053",
+    "character": "东云绘名",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res014_no002",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ワンダーランズ×ショウタイム"
+  },
+  {
+    "id": "res014_no008",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "キラットナカチューシャ☆"
+  },
+  {
+    "id": "res014_no012",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "守りたい笑顔"
+  },
+  {
+    "id": "res014_no021",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "レッツ・エチュード♪"
+  },
+  {
+    "id": "res014_no026",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "お姉ちゃんと一緒っ☆"
+  },
+  {
+    "id": "res014_no030",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res014_no033",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "みんなで映画鑑賞会☆"
+  },
+  {
+    "id": "res014_no041",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "わくわく♪お菓子の町づくり！"
+  },
+  {
+    "id": "res014_no042",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res014_no046",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "気になる劇団"
+  },
+  {
+    "id": "res014_no054",
+    "character": "凤笑梦",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "はりきり応援団長"
+  },
+  {
+    "id": "res014_no001",
+    "character": "凤笑梦",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ハイパー★ポジティブ"
+  },
+  {
+    "id": "res014_no019",
+    "character": "凤笑梦",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res014_no028",
+    "character": "凤笑梦",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res014_no039",
+    "character": "凤笑梦",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res014_no048",
+    "character": "凤笑梦",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res021_no002",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "誰もいないセカイ"
+  },
+  {
+    "id": "res021_no003",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ステージのセカイ"
+  },
+  {
+    "id": "res021_no004",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ストリートのセカイ"
+  },
+  {
+    "id": "res021_no005",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ワンダーランドのセカイ"
+  },
+  {
+    "id": "res021_no006",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false
+  },
+  {
+    "id": "res021_no019",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "眠りを知らぬ怠惰な未亡人"
+  },
+  {
+    "id": "res021_no021",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "始まりの想いを見守って"
+  },
+  {
+    "id": "res021_no024",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "代役に挑戦！"
+  },
+  {
+    "id": "res021_no026",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ミクミク☆ガンナー！"
+  },
+  {
+    "id": "res021_no035",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ギラギラしてこそ"
+  },
+  {
+    "id": "res021_no038",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Origin Style"
+  },
+  {
+    "id": "res021_no039",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Classroom"
+  },
+  {
+    "id": "res021_no040",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Stage"
+  },
+  {
+    "id": "res021_no041",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Street"
+  },
+  {
+    "id": "res021_no042",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Wonderland"
+  },
+  {
+    "id": "res021_no043",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Empty"
+  },
+  {
+    "id": "res021_no044",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "湖畔にて"
+  },
+  {
+    "id": "res021_no051",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res021_no060",
+    "character": "初音未来",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "時には穏やかな時間を"
+  },
+  {
+    "id": "res021_no001",
+    "character": "初音未来",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "誰もが知る歌姫"
+  },
+  {
+    "id": "res021_no027",
+    "character": "初音未来",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！"
+  },
+  {
+    "id": "res021_no036",
+    "character": "初音未来",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2023"
+  },
+  {
+    "id": "res021_no049",
+    "character": "初音未来",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2024"
+  },
+  {
+    "id": "res021_no057",
+    "character": "初音未来",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2025"
+  },
+  {
+    "id": "res013_no002",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ワンダーランズ×ショウタイム"
+  },
+  {
+    "id": "res013_no007",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "全員参加のお正月"
+  },
+  {
+    "id": "res013_no009",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "バルーンプレゼンター"
+  },
+  {
+    "id": "res013_no024",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "確かな一歩を重ねて"
+  },
+  {
+    "id": "res013_no026",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ありがとうの挨拶"
+  },
+  {
+    "id": "res013_no028",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res013_no031",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.けろけろけろっぴ"
+  },
+  {
+    "id": "res013_no039",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "わくわくお土産タイム"
+  },
+  {
+    "id": "res013_no041",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res013_no044",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "魅惑の立ち振る舞い"
+  },
+  {
+    "id": "res013_no052",
+    "character": "天马司",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "眠れない夜には"
+  },
+  {
+    "id": "res013_no001",
+    "character": "天马司",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "いつかはスター！"
+  },
+  {
+    "id": "res013_no017",
+    "character": "天马司",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res013_no023",
+    "character": "天马司",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res013_no035",
+    "character": "天马司",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res013_no046",
+    "character": "天马司",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res013_no054",
+    "character": "天马司",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res002_no002",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Leo/need"
+  },
+  {
+    "id": "res002_no006",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "アイアム体育祭実行委員！"
+  },
+  {
+    "id": "res002_no013",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "クッキー・エール"
+  },
+  {
+    "id": "res002_no023",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "じっくりゆっくり、心を込めて"
+  },
+  {
+    "id": "res002_no027",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "みんな集まれ～！感謝ライブ！"
+  },
+  {
+    "id": "res002_no030",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res002_no031",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "楽しみでいっぱい♪"
+  },
+  {
+    "id": "res002_no033",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "１年の感謝を込めて"
+  },
+  {
+    "id": "res002_no034",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "リーダーにしてほしいこと？"
+  },
+  {
+    "id": "res002_no039",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "懐かしの連弾"
+  },
+  {
+    "id": "res002_no043",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res002_no050",
+    "character": "天马咲希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "想いをキャッチするために！"
+  },
+  {
+    "id": "res002_no001",
+    "character": "天马咲希",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "いつも明るいムードメーカー"
+  },
+  {
+    "id": "res002_no018",
+    "character": "天马咲希",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res002_no025",
+    "character": "天马咲希",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res002_no037",
+    "character": "天马咲希",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res002_no047",
+    "character": "天马咲希",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res002_no054",
+    "character": "天马咲希",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res017_no002",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "25時、ナイトコードで。"
+  },
+  {
+    "id": "res017_no008",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "この春を、あなたと……"
+  },
+  {
+    "id": "res017_no011",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "不器用なティータイム"
+  },
+  {
+    "id": "res017_no018",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "その手を離さないように"
+  },
+  {
+    "id": "res017_no021",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "出会いを導いて"
+  },
+  {
+    "id": "res017_no028",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res017_no031",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.まるもふびより"
+  },
+  {
+    "id": "res017_no036",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "平穏な夜を願って"
+  },
+  {
+    "id": "res017_no039",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "とある忘れもの"
+  },
+  {
+    "id": "res017_no041",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res017_no051",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "招待のお礼に"
+  },
+  {
+    "id": "res017_no054",
+    "character": "宵崎奏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "形にした先で"
+  },
+  {
+    "id": "res017_no001",
+    "character": "宵崎奏",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "音楽に愛された少女"
+  },
+  {
+    "id": "res017_no016",
+    "character": "宵崎奏",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res017_no024",
+    "character": "宵崎奏",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res017_no033",
+    "character": "宵崎奏",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res017_no043",
+    "character": "宵崎奏",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res017_no050",
+    "character": "宵崎奏",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res009_no002",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Vivid BAD SQUAD"
+  },
+  {
+    "id": "res009_no010",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "想いをこめたシーグラス"
+  },
+  {
+    "id": "res009_no013",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "あったかキャンプスタイル"
+  },
+  {
+    "id": "res009_no018",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "プリティブライズメイド"
+  },
+  {
+    "id": "res009_no025",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "最後の練習"
+  },
+  {
+    "id": "res009_no028",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res009_no031",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.コロコロクリリン"
+  },
+  {
+    "id": "res009_no035",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "たくさん話すね！"
+  },
+  {
+    "id": "res009_no041",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res009_no050",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "鬼の思い出は"
+  },
+  {
+    "id": "res009_no051",
+    "character": "小豆泽心羽",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "再会を楽しみに"
+  },
+  {
+    "id": "res009_no001",
+    "character": "小豆泽心羽",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "内気な小動物"
+  },
+  {
+    "id": "res009_no016",
+    "character": "小豆泽心羽",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res009_no024",
+    "character": "小豆泽心羽",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res009_no034",
+    "character": "小豆泽心羽",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res009_no043",
+    "character": "小豆泽心羽",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res009_no052",
+    "character": "小豆泽心羽",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res024_no002",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "教室のセカイ"
+  },
+  {
+    "id": "res024_no010",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "フェアリーランタン♪"
+  },
+  {
+    "id": "res024_no018",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "的確なアドバイス"
+  },
+  {
+    "id": "res024_no021",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "待つという選択"
+  },
+  {
+    "id": "res024_no025",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ラフに、だけど豊かに響いて"
+  },
+  {
+    "id": "res024_no027",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "高まる危惧"
+  },
+  {
+    "id": "res024_no029",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Origin Style"
+  },
+  {
+    "id": "res024_no030",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Classroom"
+  },
+  {
+    "id": "res024_no032",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.マイスウィートピアノ"
+  },
+  {
+    "id": "res024_no035",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "セカイでフォトコンテスト！"
+  },
+  {
+    "id": "res024_no039",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "始まりの場所として"
+  },
+  {
+    "id": "res024_no043",
+    "character": "巡音流歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res024_no001",
+    "character": "巡音流歌",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "クールビューティー"
+  },
+  {
+    "id": "res024_no016",
+    "character": "巡音流歌",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！"
+  },
+  {
+    "id": "res024_no024",
+    "character": "巡音流歌",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2023"
+  },
+  {
+    "id": "res024_no034",
+    "character": "巡音流歌",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2024"
+  },
+  {
+    "id": "res024_no044",
+    "character": "巡音流歌",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2025"
+  },
+  {
+    "id": "res024_no052",
+    "character": "巡音流歌",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2026"
+  },
+  {
+    "id": "res004_no002",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Leo/need"
+  },
+  {
+    "id": "res004_no006",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "いろんな優しさ"
+  },
+  {
+    "id": "res004_no013",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "音の道も書の道も"
+  },
+  {
+    "id": "res004_no019",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "真正面からのリベンジへ"
+  },
+  {
+    "id": "res004_no022",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Leo/needで雪遊び"
+  },
+  {
+    "id": "res004_no026",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "テクニカルエキスパート"
+  },
+  {
+    "id": "res004_no029",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res004_no031",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.シュガーバニーズ"
+  },
+  {
+    "id": "res004_no039",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "変わることのない想い"
+  },
+  {
+    "id": "res004_no041",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "本番を待ちながら"
+  },
+  {
+    "id": "res004_no044",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res004_no051",
+    "character": "日野森志步",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "オススメはしょうゆラーメン"
+  },
+  {
+    "id": "res004_no001",
+    "character": "日野森志步",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "馴れ合いを嫌う一匹狼"
+  },
+  {
+    "id": "res004_no014",
+    "character": "日野森志步",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res004_no023",
+    "character": "日野森志步",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res004_no034",
+    "character": "日野森志步",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res004_no043",
+    "character": "日野森志步",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res004_no053",
+    "character": "日野森志步",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res008_no002",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "MORE MORE JUMP！"
+  },
+  {
+    "id": "res008_no011",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "フェニラン・ナイトデート"
+  },
+  {
+    "id": "res008_no014",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "レディ・オブ・バレンタイン"
+  },
+  {
+    "id": "res008_no016",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "完成報告！"
+  },
+  {
+    "id": "res008_no021",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "この先を見据えて"
+  },
+  {
+    "id": "res008_no028",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res008_no030",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ウィッシュミーメル"
+  },
+  {
+    "id": "res008_no033",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "楽しいレイアウト作り"
+  },
+  {
+    "id": "res008_no041",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res008_no044",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "頑張ってるみんなに癒しを"
+  },
+  {
+    "id": "res008_no047",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ふらわっち"
+  },
+  {
+    "id": "res008_no055",
+    "character": "日野森雫",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false
+  },
+  {
+    "id": "res008_no001",
+    "character": "日野森雫",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "美貌の現役アイドル"
+  },
+  {
+    "id": "res008_no012",
+    "character": "日野森雫",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res008_no022",
+    "character": "日野森雫",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2022"
+  },
+  {
+    "id": "res008_no031",
+    "character": "日野森雫",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res008_no039",
+    "character": "日野森雫",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res008_no049",
+    "character": "日野森雫",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res001_no002",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Leo/need"
+  },
+  {
+    "id": "res001_no005",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "星のステップ"
+  },
+  {
+    "id": "res001_no009",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "晴れを待つ雨傘"
+  },
+  {
+    "id": "res001_no016",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "自分からいかないと"
+  },
+  {
+    "id": "res001_no021",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "どきどきお礼メッセージ"
+  },
+  {
+    "id": "res001_no027",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res001_no030",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ディアダニエル"
+  },
+  {
+    "id": "res001_no039",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res001_no040",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "かがやきを描いて"
+  },
+  {
+    "id": "res001_no048",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "気になるVRライブ"
+  },
+  {
+    "id": "res001_no051",
+    "character": "星乃一歌",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "憧れの焼きそばパンミュージアム"
+  },
+  {
+    "id": "res001_no001",
+    "character": "星乃一歌",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "クールだけど友達想い"
+  },
+  {
+    "id": "res001_no018",
+    "character": "星乃一歌",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res001_no026",
+    "character": "星乃一歌",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res001_no036",
+    "character": "星乃一歌",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res001_no045",
+    "character": "星乃一歌",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res020_no002",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "25時、ナイトコードで。"
+  },
+  {
+    "id": "res020_no007",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "トラスト ユー"
+  },
+  {
+    "id": "res020_no011",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "サマーナイトフェスティバル"
+  },
+  {
+    "id": "res020_no016",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "３人だけの夜"
+  },
+  {
+    "id": "res020_no025",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "噂の彼女に思いを馳せて"
+  },
+  {
+    "id": "res020_no030",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res020_no032",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ぼんぼんりぼん"
+  },
+  {
+    "id": "res020_no034",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "キミに食べてほしい味"
+  },
+  {
+    "id": "res020_no037",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ハッピー肝試しを目指して！"
+  },
+  {
+    "id": "res020_no040",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res020_no043",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "“みんな”で打ち上げ"
+  },
+  {
+    "id": "res020_no048",
+    "character": "晓山瑞希",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ラブリっち"
+  },
+  {
+    "id": "res020_no001",
+    "character": "晓山瑞希",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "『カワイイ』にこだわる自由人"
+  },
+  {
+    "id": "res020_no020",
+    "character": "晓山瑞希",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res020_no028",
+    "character": "晓山瑞希",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res020_no036",
+    "character": "晓山瑞希",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res020_no047",
+    "character": "晓山瑞希",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res003_no002",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Leo/need"
+  },
+  {
+    "id": "res003_no008",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "いけないことだけど……"
+  },
+  {
+    "id": "res003_no015",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "大切な幼馴染みのために"
+  },
+  {
+    "id": "res003_no017",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "クール・ライダース・レディ"
+  },
+  {
+    "id": "res003_no020",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "信じる力"
+  },
+  {
+    "id": "res003_no030",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res003_no033",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.マロンクリーム"
+  },
+  {
+    "id": "res003_no036",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "みんな仲良しが一番♪"
+  },
+  {
+    "id": "res003_no042",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res003_no047",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.りんごっち"
+  },
+  {
+    "id": "res003_no051",
+    "character": "望月穗波",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "リーダーとリーダー"
+  },
+  {
+    "id": "res003_no001",
+    "character": "望月穗波",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "みんなに優しい優等生"
+  },
+  {
+    "id": "res003_no013",
+    "character": "望月穗波",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res003_no023",
+    "character": "望月穗波",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2022"
+  },
+  {
+    "id": "res003_no032",
+    "character": "望月穗波",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res003_no040",
+    "character": "望月穗波",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res003_no049",
+    "character": "望月穗波",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res018_no002",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "25時、ナイトコードで。"
+  },
+  {
+    "id": "res018_no009",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "廃校での出会い"
+  },
+  {
+    "id": "res018_no011",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "見上げる月は同じ"
+  },
+  {
+    "id": "res018_no013",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "導きの杖"
+  },
+  {
+    "id": "res018_no024",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "止められない想い"
+  },
+  {
+    "id": "res018_no028",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res018_no030",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.こぎみゅん"
+  },
+  {
+    "id": "res018_no040",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "待ち人は遠く"
+  },
+  {
+    "id": "res018_no041",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res018_no047",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "お返し探し"
+  },
+  {
+    "id": "res018_no048",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "徹夜を案じて"
+  },
+  {
+    "id": "res018_no050",
+    "character": "朝比奈真冬",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "見守るしかできないけれど"
+  },
+  {
+    "id": "res018_no001",
+    "character": "朝比奈真冬",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "『いい子』に見られる優等生"
+  },
+  {
+    "id": "res018_no016",
+    "character": "朝比奈真冬",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res018_no023",
+    "character": "朝比奈真冬",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res018_no033",
+    "character": "朝比奈真冬",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res018_no042",
+    "character": "朝比奈真冬",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res018_no051",
+    "character": "朝比奈真冬",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res007_no002",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "MORE MORE JUMP！"
+  },
+  {
+    "id": "res007_no007",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "後輩のためにできること"
+  },
+  {
+    "id": "res007_no009",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "パーフェクト・スイーツ"
+  },
+  {
+    "id": "res007_no015",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ミステリアスハート・ウィッチ"
+  },
+  {
+    "id": "res007_no026",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "わたしだって楽しみなんだから"
+  },
+  {
+    "id": "res007_no028",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "大切な後輩にた～っくさんの愛を"
+  },
+  {
+    "id": "res007_no029",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res007_no033",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false
+  },
+  {
+    "id": "res007_no039",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ひとりのファンとして"
+  },
+  {
+    "id": "res007_no041",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res007_no042",
+    "character": "桃井爱莉",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "お料理配信準備中"
+  },
+  {
+    "id": "res007_no001",
+    "character": "桃井爱莉",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "不屈のアイドル魂"
+  },
+  {
+    "id": "res007_no016",
+    "character": "桃井爱莉",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res007_no023",
+    "character": "桃井爱莉",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res007_no034",
+    "character": "桃井爱莉",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res007_no044",
+    "character": "桃井爱莉",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res007_no051",
+    "character": "桃井爱莉",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res006_no002",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "MORE MORE JUMP！"
+  },
+  {
+    "id": "res006_no006",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "シャボンディ・ブルー"
+  },
+  {
+    "id": "res006_no014",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Present for you！"
+  },
+  {
+    "id": "res006_no018",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "夏！合宿！水着！"
+  },
+  {
+    "id": "res006_no026",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "サプライズの裏側"
+  },
+  {
+    "id": "res006_no028",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res006_no031",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.タキシードサム"
+  },
+  {
+    "id": "res006_no032",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "サプライズ計画"
+  },
+  {
+    "id": "res006_no042",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res006_no043",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "モアモアハウスのサプライズ"
+  },
+  {
+    "id": "res006_no050",
+    "character": "桐谷遥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "合同ウォーミングアップ"
+  },
+  {
+    "id": "res006_no001",
+    "character": "桐谷遥",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "国民的アイドルだった少女"
+  },
+  {
+    "id": "res006_no012",
+    "character": "桐谷遥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res006_no019",
+    "character": "桐谷遥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2022"
+  },
+  {
+    "id": "res006_no029",
+    "character": "桐谷遥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res006_no039",
+    "character": "桐谷遥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res006_no049",
+    "character": "桐谷遥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res010_no002",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Vivid BAD SQUAD"
+  },
+  {
+    "id": "res010_no008",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "飛び入りダンサー"
+  },
+  {
+    "id": "res010_no015",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ほんの少しの悔しさ"
+  },
+  {
+    "id": "res010_no020",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "限定メニューアンケート！"
+  },
+  {
+    "id": "res010_no028",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res010_no029",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "車に乗って！"
+  },
+  {
+    "id": "res010_no031",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ルロロマニック"
+  },
+  {
+    "id": "res010_no038",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "決して後悔のないように"
+  },
+  {
+    "id": "res010_no041",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "トラブルの裏で"
+  },
+  {
+    "id": "res010_no042",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res010_no044",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ワクワクとそわそわ"
+  },
+  {
+    "id": "res010_no047",
+    "character": "白石杏",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.メロディっち"
+  },
+  {
+    "id": "res010_no001",
+    "character": "白石杏",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "カリスマシンガー"
+  },
+  {
+    "id": "res010_no018",
+    "character": "白石杏",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res010_no025",
+    "character": "白石杏",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res010_no036",
+    "character": "白石杏",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res010_no045",
+    "character": "白石杏",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res016_no002",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ワンダーランズ×ショウタイム"
+  },
+  {
+    "id": "res016_no007",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "マッドネス・ケモケモ"
+  },
+  {
+    "id": "res016_no014",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "レインボー☆キャスト"
+  },
+  {
+    "id": "res016_no017",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "サバイバルチャレンジ！"
+  },
+  {
+    "id": "res016_no029",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res016_no031",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ハンギョドン"
+  },
+  {
+    "id": "res016_no034",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "掘り出し物発見！"
+  },
+  {
+    "id": "res016_no039",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "海中ショーへご招待！"
+  },
+  {
+    "id": "res016_no041",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res016_no043",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "演出家のこだわり"
+  },
+  {
+    "id": "res016_no049",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ござるっち"
+  },
+  {
+    "id": "res016_no050",
+    "character": "神代类",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "あふれ出るアイディア"
+  },
+  {
+    "id": "res016_no001",
+    "character": "神代类",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "マイペースな天才演出家"
+  },
+  {
+    "id": "res016_no018",
+    "character": "神代类",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res016_no025",
+    "character": "神代类",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res016_no036",
+    "character": "神代类",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res016_no046",
+    "character": "神代类",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res016_no054",
+    "character": "神代类",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res005_no002",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "MORE MORE JUMP！"
+  },
+  {
+    "id": "res005_no006",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ポジティブ・フラワー"
+  },
+  {
+    "id": "res005_no010",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "慌てんぼうなメッセンジャー"
+  },
+  {
+    "id": "res005_no023",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "友情にほぐされて"
+  },
+  {
+    "id": "res005_no026",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res005_no028",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "先輩達の背中"
+  },
+  {
+    "id": "res005_no029",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.KIRIMIちゃん."
+  },
+  {
+    "id": "res005_no038",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "もっと輝きたいから"
+  },
+  {
+    "id": "res005_no040",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res005_no042",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "お友達になれるかな？"
+  },
+  {
+    "id": "res005_no049",
+    "character": "花里实乃理",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "また会える日を想って"
+  },
+  {
+    "id": "res005_no001",
+    "character": "花里实乃理",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "めざせアイドル！"
+  },
+  {
+    "id": "res005_no014",
+    "character": "花里实乃理",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res005_no022",
+    "character": "花里实乃理",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res005_no035",
+    "character": "花里实乃理",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res005_no043",
+    "character": "花里实乃理",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res005_no052",
+    "character": "花里实乃理",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  },
+  {
+    "id": "res015_no002",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ワンダーランズ×ショウタイム"
+  },
+  {
+    "id": "res015_no005",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ワンダーステッキ"
+  },
+  {
+    "id": "res015_no020",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "自分で得られる学びを"
+  },
+  {
+    "id": "res015_no024",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "離れていても、そっと背中を"
+  },
+  {
+    "id": "res015_no028",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res015_no029",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "緊張の門出？"
+  },
+  {
+    "id": "res015_no031",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.ウサハナ"
+  },
+  {
+    "id": "res015_no034",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "常盤御前の想いを知るために"
+  },
+  {
+    "id": "res015_no036",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "江戸の町並みに飲まれて"
+  },
+  {
+    "id": "res015_no040",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res015_no047",
+    "character": "草薙宁宁",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "幼き日のプリンセス"
+  },
+  {
+    "id": "res015_no001",
+    "character": "草薙宁宁",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "毒舌コミュ障"
+  },
+  {
+    "id": "res015_no016",
+    "character": "草薙宁宁",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res015_no026",
+    "character": "草薙宁宁",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res015_no037",
+    "character": "草薙宁宁",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res015_no046",
+    "character": "草薙宁宁",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res023_no002",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ストリートのセカイ"
+  },
+  {
+    "id": "res023_no006",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "センチメンタルメロディ"
+  },
+  {
+    "id": "res023_no012",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "想いをぶつける強さ"
+  },
+  {
+    "id": "res023_no016",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "イノセント・スクワイア"
+  },
+  {
+    "id": "res023_no021",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "それぞれの関わりかた"
+  },
+  {
+    "id": "res023_no024",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "形にして、贈りたい想い"
+  },
+  {
+    "id": "res023_no029",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Origin Style"
+  },
+  {
+    "id": "res023_no030",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Street"
+  },
+  {
+    "id": "res023_no033",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.リトルツインスターズ"
+  },
+  {
+    "id": "res023_no035",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "みんなの力になれるように"
+  },
+  {
+    "id": "res023_no038",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "個性をもっと輝かせて"
+  },
+  {
+    "id": "res023_no044",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res023_no046",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "はじけるアイドルスタイル"
+  },
+  {
+    "id": "res023_no056",
+    "character": "镜音连",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "小さなヒーロー"
+  },
+  {
+    "id": "res023_no001",
+    "character": "镜音连",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "はじけるパワフル！"
+  },
+  {
+    "id": "res023_no014",
+    "character": "镜音连",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！"
+  },
+  {
+    "id": "res023_no022",
+    "character": "镜音连",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2022"
+  },
+  {
+    "id": "res023_no034",
+    "character": "镜音连",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2023"
+  },
+  {
+    "id": "res023_no042",
+    "character": "镜音连",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2024"
+  },
+  {
+    "id": "res023_no052",
+    "character": "镜音连",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2025"
+  },
+  {
+    "id": "res022_no002",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ステージのセカイ"
+  },
+  {
+    "id": "res022_no010",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "ポップ・アウト・セカイ"
+  },
+  {
+    "id": "res022_no012",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "インテリシティガール"
+  },
+  {
+    "id": "res022_no017",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "bloomy idol♪"
+  },
+  {
+    "id": "res022_no021",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "レッツ・エンジョイ文化祭♪"
+  },
+  {
+    "id": "res022_no028",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Origin Style"
+  },
+  {
+    "id": "res022_no029",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Stage"
+  },
+  {
+    "id": "res022_no031",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "feat.リトルツインスターズ"
+  },
+  {
+    "id": "res022_no032",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "セカイを描いて、彩って"
+  },
+  {
+    "id": "res022_no035",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "謎の道、発見！？"
+  },
+  {
+    "id": "res022_no042",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res022_no046",
+    "character": "镜音铃",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "緊張をほぐすおまじない"
+  },
+  {
+    "id": "res022_no001",
+    "character": "镜音铃",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "はじける元気！"
+  },
+  {
+    "id": "res022_no014",
+    "character": "镜音铃",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！"
+  },
+  {
+    "id": "res022_no022",
+    "character": "镜音铃",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2022"
+  },
+  {
+    "id": "res022_no033",
+    "character": "镜音铃",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2023"
+  },
+  {
+    "id": "res022_no041",
+    "character": "镜音铃",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2024"
+  },
+  {
+    "id": "res022_no050",
+    "character": "镜音铃",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Anniversary！！2025"
+  },
+  {
+    "id": "res012_no002",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Vivid BAD SQUAD"
+  },
+  {
+    "id": "res012_no006",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "意外な才能？"
+  },
+  {
+    "id": "res012_no009",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "相棒として"
+  },
+  {
+    "id": "res012_no018",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "感じた想いの行方"
+  },
+  {
+    "id": "res012_no027",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Brand New Style"
+  },
+  {
+    "id": "res012_no029",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "いざ衣装班へ！"
+  },
+  {
+    "id": "res012_no036",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "もう少しだけ、この空気を"
+  },
+  {
+    "id": "res012_no039",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "見えずともそこにあるもの"
+  },
+  {
+    "id": "res012_no042",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Let&#x27;s enjoy the movie！"
+  },
+  {
+    "id": "res012_no048",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "相棒に託されたもの"
+  },
+  {
+    "id": "res012_no051",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "至高の香りを漂わせて"
+  },
+  {
+    "id": "res012_no052",
+    "character": "青柳冬弥",
+    "rarity": 2,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "やりとげる意志"
+  },
+  {
+    "id": "res012_no001",
+    "character": "青柳冬弥",
+    "rarity": 1,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "クラシックの秀才"
+  },
+  {
+    "id": "res012_no017",
+    "character": "青柳冬弥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！"
+  },
+  {
+    "id": "res012_no024",
+    "character": "青柳冬弥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2023"
+  },
+  {
+    "id": "res012_no035",
+    "character": "青柳冬弥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2024"
+  },
+  {
+    "id": "res012_no045",
+    "character": "青柳冬弥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2025"
+  },
+  {
+    "id": "res012_no054",
+    "character": "青柳冬弥",
+    "rarity": 0,
+    "hasNormal": true,
+    "hasAfter": false,
+    "cardName": "Happy Birthday！！2026"
+  }
+]

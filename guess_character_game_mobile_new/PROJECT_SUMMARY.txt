@@ -1,0 +1,725 @@
+================================================================================
+  Project SEKAI 猜谜游戏 - 完整项目总结文档
+  生成日期：2026-08-03
+  项目路径：D:\Trae CN\program\game\guess_character_game_mobile_new\
+================================================================================
+
+本文档涵盖该软件的所有架构、数据来源、运行逻辑、界面交互、更新机制等，
+目标是让下一个AI在不阅读源码的情况下也能完全理解该软件如何运行。
+
+
+================================================================================
+目录
+================================================================================
+1. 项目概述
+2. 技术栈与依赖
+3. 文件结构与各文件职责
+4. 数据来源详解（外部网站/API）
+5. 主界面（main.dart）
+6. 猜卡面模块（game_service.dart + game_screen.dart）
+7. 猜音乐模块（music_game_service.dart + music_game_screen.dart）
+8. 猜MV模块（video_game_screen.dart + video_data_service.dart）
+9. 本地数据文件（assets/data/）
+10. 本地存储机制（SharedPreferences + 文件系统）
+11. 缓存策略
+12. 已知问题与注意事项
+13. 打包方法
+
+
+================================================================================
+1. 项目概述
+================================================================================
+
+这是一个基于Flutter开发的Android/iOS手机游戏，主题是Project SEKAI
+（世界计划 / プロセカ）的猜谜游戏。软件包含三个游戏模式：
+
+  (1) 猜卡面：显示一张卡牌图片的局部碎片，玩家猜这张卡属于哪个角色。
+  (2) 猜MV：播放一段B站MV视频片段（静音+背景音乐），玩家猜歌曲名。
+  (3) 猜音乐：播放一段音乐音频片段，玩家猜歌曲名。
+
+软件启动时会自动从网站 pjsk.moe 检查并下载新卡牌和新歌曲数据，
+增量更新到本地，无需手动操作。
+
+游戏资源（卡牌图片、音乐音频、MV视频）全部来自外部网站，
+软件本身只存储数据索引和元信息，不内置图片/音频/视频资源。
+
+
+================================================================================
+2. 技术栈与依赖
+================================================================================
+
+文件：D:\Trae CN\program\game\guess_character_game_mobile_new\pubspec.yaml
+
+框架：Flutter (Dart)
+SDK要求：^3.13.0-270.0.dev
+
+核心依赖：
+  - http: ^1.2.1                    → HTTP请求（获取网页、下载文件、调用API）
+  - just_audio: ^0.9.40             → 音频播放（猜音乐模块 + 猜MV背景音乐）
+  - path_provider: ^2.1.3           → 获取本地文件路径（保存音乐数据、下载视频）
+  - shared_preferences: ^2.3.2      → 本地键值存储（保存最后卡牌ID、新卡数据等）
+  - cached_network_image: ^3.4.0    → 网络图片加载与缓存（卡牌图片）
+  - flutter_cache_manager: ^3.4.0   → 文件缓存管理（卡牌图片缓存）
+  - video_player: ^2.8.6            → 视频播放（猜MV模块）
+
+内置资源（assets）：
+  - assets/bg_home.jpeg             → 主界面背景
+  - assets/bg_game.jpeg             → 猜卡面界面背景
+  - assets/bg_music.jpeg            → 猜音乐界面背景
+  - assets/miku.jpeg                → 猜MV界面背景
+  - assets/sd.jpg                   → 启动画面
+  - assets/photo/                   → 猜音乐模块的占位图（6张png）
+  - assets/bg_music.mp3             → （未使用）
+  - assets/bgm/                     → 猜MV模块的背景音乐（4首mp3）
+      101_一緒に歌おう！.mp3
+      103_Our Town, Our Life.mp3
+      109_Crossing World.mp3
+      113_Many Times With You.mp3
+  - kamian.png                      → 主界面"猜卡面"按钮图标
+  - yinyue.png                      → 主界面"猜音乐"按钮图标
+  - mv_icon.png                     → 主界面"猜MV"按钮图标
+  - assets/data/*.json              → 数据文件（详见第9节）
+
+
+================================================================================
+3. 文件结构与各文件职责
+================================================================================
+
+D:\Trae CN\program\game\guess_character_game_mobile_new\
+├── lib\
+│   ├── main.dart               → 程序入口，主界面，启动时检查更新
+│   ├── constants.dart          → 全局常量（URL、角色列表、分类定义）
+│   ├── game_service.dart       → 卡牌数据管理（加载、更新、随机抽取）
+│   ├── game_screen.dart        → 猜卡面游戏界面
+│   ├── music_game_service.dart → 音乐数据管理（加载、更新、随机抽取）
+│   ├── music_game_screen.dart  → 猜音乐游戏界面
+│   ├── video_game_screen.dart  → 猜MV游戏界面
+│   ├── video_data_service.dart → MV视频数据管理（B站API、下载）
+│   ├── cards_data.dart         → 角色映射表、生日卡ID集合、嵌入卡牌列表
+│   ├── card_info_map.dart      → 卡牌详细信息映射（约2400行，本地卡牌数据）
+│   ├── card_names.dart         → 卡牌ID→卡牌名称的映射表
+│   └── cache_settings.dart     → 缓存设置类（已废弃，未实际使用）
+├── assets\
+│   ├── data\
+│   │   ├── cards.json              → 基础卡牌数据（约1421张）
+│   │   ├── extra_cards.json        → 额外卡牌数据（补充卡牌）
+│   │   ├── musics.json             → 简化版音乐数据（未使用）
+│   │   ├── musics_full.json        → 完整音乐数据（约697首，含音频URL）
+│   │   ├── musics_full_updated.json→ 音乐数据副本（打包用）
+│   │   ├── music_categories.json   → 音乐分类映射（歌曲ID→分类）
+│   │   ├── mv_videos_matched.json  → MV视频与歌曲的匹配数据
+│   │   └── valid_music_ids.json    → 有效音乐ID列表（未使用）
+│   ├── bg_home.jpeg / bg_game.jpeg / bg_music.jpeg / miku.jpeg / sd.jpg
+│   ├── photo\                      → 猜音乐占位图（6张）
+│   └── bgm\                        → 猜MV背景音乐（4首）
+├── android\                    → Android构建配置
+├── pubspec.yaml                → 项目配置
+└── build\app\outputs\flutter-apk\app-release.apk → 打包输出
+
+
+================================================================================
+4. 数据来源详解（外部网站/API）
+================================================================================
+
+【重要】所有游戏资源来自以下外部网站，软件本身不内置图片/音频/视频。
+
+4.1 卡牌图片资源
+    服务器：https://storage.exmeaning.com/sekai-jp-assets/
+    路径格式：
+      特训前：/character/member/{resNum_noNum}/card_normal.webp
+      特训后：/character/member/{resNum_noNum}/card_after_training.webp
+    示例：
+      https://storage.exmeaning.com/sekai-jp-assets/character/member/res001_no003/card_normal.webp
+    说明：resNum是3位数字（如001=星乃一歌），noNum是3位数字（卡牌序号）
+         resNum与角色的对应关系见 game_service.dart 第14-41行 RES_TO_CHARACTER 映射表
+
+4.2 卡牌详情页面（用于扫描新卡）
+    网站：https://pjsk.moe/ja-JP/cards/{id}/
+    说明：id是数字（如1422），日服路径用 ja-JP
+    判断卡牌有效性的方法：
+      - 页面标题不能是 "カード詳細 | Moesekai"（无效卡牌的占位标题）
+      - og:image 不能是通用图标 pjsk.moe/data/icon/icon.jpg
+      - 从 og:image URL 中提取 res{数字}_no{数字} 获取资源ID和角色
+
+4.3 音乐封面资源
+    服务器：https://storage.exmeaning.com/sekai-jp-assets/
+    路径格式：/music/jacket/jacket_s_{id}/jacket_s_{id}.webp
+    示例：https://storage.exmeaning.com/sekai-jp-assets/music/jacket/jacket_s_001/jacket_s_001.webp
+
+4.4 音乐音频资源
+    服务器：https://storage.exmeaning.com/sekai-jp-assets/
+    路径格式：/music/long/{prefix}_{id4}_{suffix}/{prefix}_{id4}_{suffix}.mp3
+    参数说明：
+      prefix = 版本前缀（2字母）
+        vs = バーチャル・シンガーver.（虚拟歌手版）
+        se = セカイver.（中之人版）
+        （旧代码还检查 in/an/so/ba/li/og/re/et/co/pm/fu 共13种，现已精简为2种）
+      id4 = 4位数字的歌曲ID（如 0001, 0758）
+      suffix = 2位数字的版本序号（新歌只检查 01）
+    示例：https://storage.exmeaning.com/sekai-jp-assets/music/long/vs_0001_01/vs_0001_01.mp3
+    说明：新歌最多只有 vs（虚拟歌手）和 se（セカイ）两个版本，各只有 suffix 01
+
+4.5 音乐详情页面（用于扫描新歌）
+    网站：https://pjsk.moe/ja-jp/music/{id}/
+    说明：从 og:title 元标签提取歌曲标题
+
+4.6 网站地图（用于获取歌曲ID列表）
+    入口：https://pjsk.moe/sitemap.xml
+    详细地图：https://pjsk.moe/sitemap-details/ja-jp.xml
+    说明：从详细地图中用正则提取所有 /ja-jp/music/(\d+)/ 获取歌曲ID
+
+4.7 B站MV视频（猜MV模块）
+    视频信息API：https://api.bilibili.com/x/web-interface/view?bvid={bvid}
+      → 返回视频信息，从中提取 cid
+    视频下载URL API：https://api.bilibili.com/x/player/playurl?bvid={bvid}&cid={cid}&qn=64
+      → 返回可下载的视频URL
+    下载请求头需要：
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+      Referer: https://www.bilibili.com/
+    说明：bvid是B站视频ID（如 BV1xwx1e8E16），存储在 mv_videos_matched.json 中
+
+
+================================================================================
+5. 主界面（main.dart）
+================================================================================
+
+文件：D:\Trae CN\program\game\guess_character_game_mobile_new\lib\main.dart
+
+5.1 界面布局
+    - 顶部AppBar：标题"Project SEKAI"，右上角菜单按钮（切换日志面板）
+    - 背景：assets/bg_home.jpeg
+    - 三个按钮（从上到下）：
+      (1) "猜卡面"  → 图标 kamian.png  → 跳转 GameScreen
+      (2) "猜MV"    → 图标 mv_icon.png → 跳转 VideoGameScreen
+      (3) "猜音乐"  → 图标 yinyue.png  → 跳转 MusicGameScreen
+    - 右上角日志面板（可切换显示/隐藏）：
+      显示更新状态、新增卡牌/歌曲列表、扫描日志（最多50条）
+
+5.2 启动流程（_checkUpdates方法，第52-156行）
+    (1) 加载音乐数据：调用 MusicGameService.loadMusics(onProgress)
+        → 先从本地加载，再检查网站更新
+    (2) 加载卡牌数据：调用 GameService.loadCards()
+        → 从JSON文件和SharedPreferences加载
+    (3) 检查卡牌更新：调用 GameService.checkForCardUpdatesInBackground(onProgress)
+        → 从网站扫描新卡
+    (4) 比较数量变化，记录新增的卡牌和歌曲
+    (5) 保存当前数量到SharedPreferences（last_music_count, last_card_count）
+
+5.3 日志面板
+    - 通过 _showLogs 变量控制显示
+    - 显示内容：更新状态文本、新增四星卡（橙色）、新增三星卡（蓝色）、
+      新增歌曲（紫色）、扫描日志（灰色，最多50条）
+
+
+================================================================================
+6. 猜卡面模块
+================================================================================
+
+6.1 数据服务：game_service.dart
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\lib\game_service.dart
+
+    【类结构】
+    - CardData：卡牌数据类
+      字段：id（如"res001_no003"）、character（角色名）、rarity（稀有度1-4）、
+            normalUrl（特训前图片URL）、afterUrl（特训后图片URL）、cardName（显示名称）
+
+    - GameService：单例服务（_instance）
+      内部数据：
+        _allCards：所有卡牌列表
+        _validCards：有效卡牌列表（仅3星、4星、生日卡，用于猜卡抽取）
+
+    【卡牌加载流程】（loadCards方法，第70-101行）
+      (1) _loadCardsFromJson()：从 assets/data/cards.json 加载基础卡牌
+      (2) _loadExtraCardsFromJson()：从 assets/data/extra_cards.json 加载额外卡牌
+      (3) _loadNewCardsFromPrefs()：从 SharedPreferences 加载之前扫描到的新卡
+      (4) 按ID数字排序
+
+    【卡牌更新流程】（checkForCardUpdatesInBackground方法，第131-219行）
+      (1) 读取 SharedPreferences 中保存的最后卡牌ID（PREFS_KEY_LAST_CARD_ID，默认1421）
+      (2) 从 lastCardId + 1 开始逐个检查ID
+      (3) 对每个ID，调用 _fetchCardData() 获取卡牌信息
+      (4) 连续5个ID无效则停止扫描
+      (5) 新卡添加到 _allCards 和 _validCards（仅3星以上/生日卡）
+      (6) 保存新卡到 SharedPreferences，更新最后卡牌ID
+
+    【_fetchCardData方法】（第228-461行）- 从网站获取单张卡牌信息
+      (1) 请求 https://pjsk.moe/ja-JP/cards/{id}/
+      (2) 检查页面标题，如果是"カード詳細 | Moesekai"则无效
+      (3) 检查og:image，如果是通用图标则无效
+      (4) 从og:image URL提取 res{数字}_no{数字} 获取资源ID
+      (5) 通过 RES_TO_CHARACTER 映射表获取角色名
+      (6) 构建图片URL：
+          normalUrl = https://storage.exmeaning.com/sekai-jp-assets/character/member/{resId}/card_normal.webp
+          afterUrl  = .../card_after_training.webp
+      (7) 解析稀有度：依次尝试 ★格式、星格式、rarity-N class格式、birthday关键词
+          如果都失败，默认设为3
+      (8) 从 CARD_NAMES 映射表或页面标题获取卡牌名称
+
+    【重要常量】
+    - CARD_BASE_URL = 'https://storage.exmeaning.com/sekai-jp-assets/character/member'
+    - PREFS_KEY_LAST_CARD_ID = 'last_card_id'（默认值1421）
+    - PREFS_KEY_NEW_CARDS = 'new_cards_data'
+    - RES_TO_CHARACTER：resNum(3位) → 角色名 的映射（001-026，共26个角色）
+
+    【角色列表】（CHARACTER_ORDER，constants.dart 第27-33行）
+      星乃一歌、天马咲希、望月穗波、日野森志步、花里实乃理、桐谷遥、
+      桃井爱莉、日野森雫、小豆泽心羽、白石杏、东云彰人、青柳冬弥、
+      天马司、凤笑梦、草薙宁宁、神代类、宵崎奏、朝比奈真冬、
+      东云绘名、晓山瑞希、初音未来、镜音铃、镜音连、巡音流歌、MEIKO、KAITO
+
+6.2 游戏界面：game_screen.dart
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\lib\game_screen.dart
+
+    【界面布局】
+    - AppBar：标题"猜角色小游戏"，左侧返回按钮，右侧分数显示 + 菜单按钮
+    - 背景：assets/bg_game.jpeg
+    - 左侧抽屉（可切换）：按角色分组列出所有卡牌，点击可查看
+    - 主区域：
+      - 卡面碎片显示区（350高，圆角，阴影）
+      - 碎片大小滑块（10%-60%）
+      - 两个按钮："抽取新卡" 和 "查看完整原图"
+      - 26个角色选择按钮（Wrap布局）
+
+    【游戏逻辑】
+    - _loadGame()：清空上一张卡的缓存，随机抽取新卡，随机选择特训前/后图片
+    - _buildFragmentImage()：用 Transform.scale 放大图片，通过 alignment 偏移显示局部
+      scale = 1 / _fragmentSize（碎片越小，放大越多）
+      alignment 随机偏移 X/Y 在 0.25-0.75 之间
+    - _onCharacterSelected()：点击角色按钮，正确则变绿加分，错误则提示
+    - _onNextQuestion()：延迟300ms后加载下一题
+    - 图片加载失败重试：最多2次，超过则跳过该卡
+
+    【缓存清理】
+    - _clearPreviousCardCache()：每次切换题目时，用 DefaultCacheManager().removeFile()
+      删除上一张卡的 normalUrl 和 afterUrl 缓存
+    - 同时清理预加载的下一张卡缓存
+
+    【图片下载功能】
+    - 答题后可下载特训前/后图片到 /storage/emulated/0/Download/（Android）
+    - 下载后调用 am scan 命令扫描文件（让系统相册识别）
+
+    【抽屉目录】
+    - 按角色分组（ExpansionTile），展开后显示该角色的所有卡牌
+    - 点击卡牌直接查看（不计分）
+
+
+================================================================================
+7. 猜音乐模块
+================================================================================
+
+7.1 数据服务：music_game_service.dart
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\lib\music_game_service.dart
+
+    【类结构】
+    - MusicData：音乐数据类
+      字段：id、title、titleEn、composer、lyricist、arranger、fillerSec、
+            aliases（别名列表）、audioUrls（音频URL列表）、versionNames（版本名列表）、
+            jacketUrl（封面URL）、category（分类）
+
+    - MusicGameService：音乐服务（非单例，每次new）
+      内部数据：
+        _musics：所有音乐列表
+        _recentPlayedIds：最近播放的歌曲ID集合（最多50个，避免重复抽取）
+
+    【重要常量】（第11-13行）
+    - AUDIO_BASE_URL = 'https://storage.exmeaning.com/sekai-jp-assets/music/long'
+    - JACKET_BASE_URL = 'https://storage.exmeaning.com/sekai-jp-assets/music/jacket'
+    - MUSIC_LIST_URL = 'https://pjsk.moe/ja-jp/music/'
+
+    【音乐加载流程】（loadMusics方法，第132-144行）
+      (1) _loadMusicsFromLocal()：从本地文件加载
+          - 优先读取 应用文档目录/musics_full_updated.json（更新后的文件）
+          - 回退到 assets/data/musics_full.json（内置文件）
+      (2) 如果本地有数据：assignCategories() 分配分类 + _checkForUpdatesInBackground() 检查更新
+      (3) 如果本地无数据：_loadMusicsFromPjskMoe() 首次从网站全量加载
+
+    【音乐更新流程】（_checkForUpdatesInBackground方法，第171-294行）
+      (1) 请求 https://pjsk.moe/sitemap.xml
+      (2) 从中提取 https://pjsk.moe/sitemap-details/ja-jp.xml
+      (3) 请求详细地图，用正则提取所有歌曲ID
+          正则：<loc>https://pjsk\.moe/(?:ja-jp/)?music/(\d+)/</loc>
+      (4) 按ID降序排列
+      (5) 读取 SharedPreferences 中的 last_saved_music_id（默认754）
+      (6) 从最大ID开始往下扫描，遇到 last_saved_music_id 则停止
+      (7) 对每个新ID调用 _fetchMusicData() 获取歌曲信息
+      (8) 新歌添加到 _musics，保存到本地文件，更新 last_saved_music_id
+
+    【_fetchMusicData方法】（第363-456行）- 从网站获取单首歌曲信息
+      (1) 检查封面是否存在：HEAD请求 jacket_s_{id}/jacket_s_{id}.webp
+      (2) 请求 https://pjsk.moe/ja-jp/music/{id}/
+      (3) 从 og:title 元标签提取歌曲标题
+      (4) 检查音频版本（只检查2种，各1个suffix）：
+          - vs_{id4}_01（バーチャル・シンガーver.）
+          - se_{id4}_01（セカイver.）
+      (5) 至少有1个音频版本才认为是有效歌曲
+      (6) id4 = id左补零到4位（如 1 → 0001, 758 → 0758）
+
+    【首次全量加载】（_loadMusicsFromPjskMoe方法，第303-350行）
+      按7个分类逐个获取：vocaloid, light_music_club, idol, street,
+      theme_park, school_refusal, other
+      请求 https://pjsk.moe/ja-jp/music/?tag={category}
+      从HTML中提取 /ja-jp/music/(\d+)/ 获取歌曲ID
+
+    【分类分配】（assignCategories方法，第524-551行）
+      从 assets/data/music_categories.json 读取分类映射
+      该JSON的 categoryMap 字段是 {分类key: [歌曲ID列表]} 格式
+
+    【答案判断】（isCorrectTitle方法，第583-603行）
+      用户输入与歌曲标题、英文名、别名进行 contains 匹配（不区分大小写）
+
+    【随机抽取】（getRandomMusic方法，第564-578行）
+      新手模式：只抽取有音频URL的歌曲
+      普通模式：从所有歌曲中随机抽取
+
+    【日志系统】
+      _reportProgress方法：同时输出到print（控制台）和onProgress回调（UI面板）
+      所有加载/扫描过程都有详细日志，格式为"🎵 ID xxx: 描述"
+
+7.2 游戏界面：music_game_screen.dart
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\lib\music_game_screen.dart
+
+    【界面布局】
+    - AppBar：标题"🎵 猜音乐"，紫色背景，左侧返回，右侧菜单 + 新手模式切换
+    - 背景：assets/bg_music.jpeg
+    - 左侧抽屉（可切换）：歌曲列表，支持搜索，按ID降序排列（最新在最上）
+    - 主区域：
+      - 封面显示区（150x150）：答题前显示随机占位图，答题后显示真实封面
+      - 版本选择按钮（如有多个版本）
+      - 播放控制：重播、播放/暂停、跳过
+      - 进度条（答题后显示）
+      - 试听时长滑块（5-10秒）
+      - 答题输入框 + 确认/跳过按钮
+      - 反馈区域（显示对错、封面、歌名、别名）
+
+    【游戏逻辑】
+    - _loadData()：调用 loadMusicsLocalOnly() 只从本地加载（不检查更新）
+    - _loadNextMusic()：随机抽取下一首，预加载下一首音频
+    - _playMusic()：预览模式播放片段，完整模式播放全曲
+    - _playPreviewClip()：
+        随机选择起始位置（9秒后到结束前5秒之间）
+        播放 _clipSeconds 秒后自动暂停
+    - _checkAnswer()：判断对错，显示答案，切换到完整播放
+    - _skipQuestion()：跳过，显示答案
+
+    【占位图】
+      答题前显示 assets/photo/ 下的6张图片之一（随机选择 _placeholderIndex）
+      文件名：1783920273571.png 等6张
+
+    【试听时长】
+      _clipSeconds 默认5秒，滑块范围5-10秒，divisions=5
+      （注意：猜MV模块的片段长度是5-20秒，两者不同）
+
+    【抽屉目录】（_getAllMusicsForDrawer方法，第639-652行）
+      - 支持搜索（按标题、英文名、别名匹配）
+      - 按ID降序排列（最新下载的歌在最上面）
+
+
+================================================================================
+8. 猜MV模块
+================================================================================
+
+8.1 视频数据服务：video_data_service.dart
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\lib\video_data_service.dart
+
+    【类结构】
+    - VideoData：视频数据类
+      字段：bvid（B站视频ID）、title（视频标题）、duration（时长秒）、
+            songId（对应歌曲ID）、songTitle（歌曲名）、songTitleEn（英文名）、
+            matchScore（匹配分数）、is3dmv（是否3DMV）
+
+    - VideoGameService：视频服务
+      数据来源：assets/data/mv_videos_matched.json（预匹配好的视频-歌曲对应关系）
+
+    【视频下载流程】（downloadVideo方法，第159-191行）
+      (1) getVideoDownloadUrl(bvid)：
+          - 请求 https://api.bilibili.com/x/web-interface/view?bvid={bvid} 获取 cid
+          - 请求 https://api.bilibili.com/x/player/playurl?bvid={bvid}&cid={cid}&qn=64 获取下载URL
+      (2) 下载到 外部存储目录/mv_videos/{bvid}_{title}.mp4
+      (3) 如果文件已存在则直接返回路径（缓存）
+
+    【答案判断】（isCorrectTitle方法，第94-108行）
+      使用 _normalizeText() 规范化文本后精确匹配
+      规范化：转小写、去空格、去括号（日文和英文括号）、去标点
+
+8.2 游戏界面：video_game_screen.dart
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\lib\video_game_screen.dart
+
+    【界面布局】
+    - AppBar：标题"🎬 猜MV"，紫色背景，左侧返回
+    - 背景：assets/miku.jpeg
+    - 视频播放区（16:9，圆角，黑色背景）
+    - 播放控制：重播、播放/暂停、跳过
+    - 游戏区域：
+      - "看MV猜歌名"提示
+      - 输入框
+      - 进度条
+      - 片段长度滑块（5-20秒，默认5秒，divisions=15）
+      - 结果显示区域
+      - 提交/跳过/下一题按钮
+      - 底部"资源来自PJS字幕组"
+
+    【游戏逻辑】
+    - _loadData()：加载视频数据和歌曲数据
+    - _pickRandomVideo()：随机选择视频
+    - _downloadAndPlay()：下载视频并播放
+    - _playLocalVideo()：初始化视频控制器，静音播放
+    - _pickRandomClipStart()：随机选择片段起始位置
+        最小起始：10秒后
+        最大起始：总时长 - 片段长度 - 10秒
+    - _loopClip()：片段循环播放
+        播放到片段结尾时：
+        (1) 300ms淡出（黑屏渐变）
+        (2) 更新片段长度为_pendingClipDuration
+        (3) seekTo回到片段起始
+        (4) 300ms淡入（黑屏渐变消失）
+        使用 AnimatedOpacity + Curves.easeInOut 实现淡入淡出
+    - 背景音乐：视频静音播放，同时播放本地BGM（4首随机选1首，循环播放）
+
+    【3DMV马赛克遮罩】
+      如果 is3dmv == true，在视频左下角叠加一个模糊遮罩（_buildMosaicMask）
+      位置：left=8, bottom=13, width=200, height=10
+      效果：BackdropFilter blur(5,5) + 黑色半透明
+
+    【缓存清理】
+      _nextVideo()：切换下一题时，先调用 _deleteCurrentVideoCache() 删除当前视频文件
+      确保每次只保留1个视频文件在本地
+
+    【片段长度】
+      _pendingClipDuration 默认5秒，范围5-20秒
+      滑块修改的是 _pendingClipDuration，在下一次循环时才生效（_clipDuration）
+
+
+================================================================================
+9. 本地数据文件（assets/data/）
+================================================================================
+
+9.1 cards.json
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\assets\data\cards.json
+    格式：JSON数组，每张卡牌包含：
+      id（如"res001_no001"）、title、star（稀有度1-4）、character、cardName、
+      normalUrl、afterUrl、images（图片URL数组）、url
+    说明：基础卡牌数据，约1421张
+
+9.2 extra_cards.json
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\assets\data\extra_cards.json
+    格式：JSON数组，每张卡牌包含：
+      id、character、rarity、hasNormal、hasAfter、cardName
+    说明：额外补充卡牌，图片URL通过规则拼接（不直接存储URL）
+
+9.3 musics_full.json
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\assets\data\musics_full.json
+    格式：JSON数组，每首歌包含：
+      id、title、titleEn、audioUrls（音频URL数组）、versionNames（版本名数组）、
+      jacketUrl、aliases（别名数组）
+    说明：完整音乐数据，约697首，是猜音乐和猜MV模块的数据源
+
+9.4 musics_full_updated.json
+    说明：musics_full.json 的副本，打包时使用
+    运行时更新的数据保存在 应用文档目录/musics_full_updated.json（path_provider路径）
+
+9.5 music_categories.json
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\assets\data\music_categories.json
+    格式：
+    {
+      "categories": [{key, name, color}, ...],
+      "categoryMap": {"vocaloid": [1,43,44,...], "light_music_club": [2,3,...], ...},
+      "total": 662
+    }
+    说明：7个分类（vocaloid, light_music_club, idol, street, theme_park,
+         school_refusal, other），每个分类对应一组歌曲ID
+
+9.6 mv_videos_matched.json
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\assets\data\mv_videos_matched.json
+    格式：JSON数组，每个视频包含：
+      bvid（B站视频ID）、title、duration、song_id、song_title、song_title_en、
+      match_score、is_3dmv
+    说明：预匹配好的MV视频与歌曲的对应关系
+
+9.7 其他文件
+    - musics.json：简化版音乐数据（未使用）
+    - valid_music_ids.json：有效音乐ID列表（未使用）
+
+
+================================================================================
+10. 本地存储机制（SharedPreferences + 文件系统）
+================================================================================
+
+10.1 SharedPreferences 键值
+    文件：通过 shared_preferences 包，存储在系统偏好中
+
+    【卡牌相关】
+    - 'last_card_id'：最后扫描的卡牌ID（字符串，默认"1421"）
+    - 'new_cards_data'：扫描到的新卡数据（JSON字符串，包含所有卡牌）
+    - 'last_card_count'：上次卡牌总数（整数，用于主界面比较增量）
+
+    【音乐相关】
+    - 'last_saved_music_id'：最后扫描的音乐ID（字符串，默认"754"）
+    - 'last_music_count'：上次音乐总数（整数，用于主界面比较增量）
+
+10.2 文件系统存储
+    【音乐数据】
+    - 应用文档目录/musics_full_updated.json
+      路径获取：getApplicationDocumentsDirectory()
+      作用：保存更新后的完整音乐数据，优先于内置assets加载
+
+    【MV视频缓存】
+    - 外部存储目录/mv_videos/{bvid}_{title}.mp4
+      路径获取：getExternalStorageDirectory()
+      作用：下载的B站MV视频文件，每次切换题目时删除上一个
+
+    【卡牌图片缓存】
+    - 由 flutter_cache_manager 自动管理
+    - 每次切换题目时主动调用 removeFile() 清理上一张卡的缓存
+
+    【图片下载】
+    - Android: /storage/emulated/0/Download/{cardId}-{filename}
+    - iOS: 应用文档目录/{cardId}-{filename}
+
+
+================================================================================
+11. 缓存策略
+================================================================================
+
+【设计原则】猜完每道题后立即删除该题的资源缓存，不保留。
+
+11.1 猜卡面模块
+    - 图片缓存：使用 DefaultCacheManager（flutter_cache_manager）
+    - 清理时机：_loadGame() 开头调用 _clearPreviousCardCache()
+    - 清理内容：上一张卡的 normalUrl 和 afterUrl 缓存文件
+    - 预加载：原代码有预加载下一张卡的逻辑（_pickNextCard），但_nextCard基本未使用
+
+11.2 猜音乐模块
+    - 音频播放：使用 just_audio，流式播放，不缓存到本地文件
+    - 清理时机：_audioPlayer.stop() 释放资源
+    - 预加载：_preloadNextMusic() 预加载下一首的音频URL
+
+11.3 猜MV模块
+    - 视频文件：下载到外部存储目录
+    - 清理时机：_nextVideo() 开头调用 _deleteCurrentVideoCache()
+    - 清理内容：删除当前视频文件（file.deleteSync()）
+    - 缓存复用：如果视频文件已存在则跳过下载（用于同一题内重播）
+
+11.4 废弃的缓存设置
+    文件：D:\Trae CN\program\game\guess_character_game_mobile_new\lib\cache_settings.dart
+    - CacheSettings类定义了缓存过期天数和最大大小设置
+    - 但实际上未在任何地方使用，主界面的设置按钮已删除
+
+
+================================================================================
+12. 已知问题与注意事项
+================================================================================
+
+12.1 卡牌稀有度解析
+    - 网站页面格式可能变化，稀有度解析依赖多种正则：
+      ★格式、星格式、rarity-N class格式、birthday关键词
+    - 如果所有解析都失败，默认设为3星
+    - 二星卡会被排除在猜卡池外（_validCards只包含3星以上和生日卡）
+
+12.2 音乐扫描速度
+    - 每首新歌需要检查2个音频URL是否存在（vs和se版本）
+    - 每个检查是一次HTTP请求，受网络延迟影响
+    - 网站没有提供音频列表API，只能逐个探测
+
+12.3 网站URL格式
+    - 网站使用Next.js框架，URL带语言前缀：/ja-jp/（日服）、/zh-cn/（国服）
+    - 本软件只使用日服数据（/ja-jp/）
+    - sitemap结构：sitemap.xml → sitemap-details/ja-jp.xml
+    - 如果网站结构再次变更，需要更新正则表达式
+
+12.4 B站视频下载
+    - 依赖B站API，可能因B站反爬或API变更导致下载失败
+    - 下载失败会自动尝试下一个视频
+    - 视频质量qn=64（720P）
+
+12.5 SharedPreferences 存储限制
+    - 'new_cards_data' 存储所有卡牌数据，随着卡牌增加可能接近上限（约5MB）
+    - 如果超限可能需要改用文件存储
+
+12.6 两个 musics_full 文件
+    - assets/data/musics_full.json 和 musics_full_updated.json 内容相同
+    - 运行时更新的文件保存在应用文档目录，不在assets中
+
+12.7 卡牌图片URL拼接
+    - 卡牌图片URL通过规则拼接，不直接存储完整URL
+    - 规则：https://storage.exmeaning.com/sekai-jp-assets/character/member/{resId}/card_normal.webp
+    - resId 格式：res{3位数字}_no{3位数字}（如 res001_no003）
+
+
+================================================================================
+13. 打包方法
+================================================================================
+
+13.1 打包命令
+    cd "D:\Trae CN\program\game\guess_character_game_mobile_new"
+    flutter build apk --release
+
+13.2 输出路径
+    D:\Trae CN\program\game\guess_character_game_mobile_new\build\app\outputs\flutter-apk\app-release.apk
+
+13.3 打包注意事项
+    - 需要安装Flutter SDK（D:\flutter\）
+    - 需要Android SDK
+    - 打包时间约30-60秒
+    - APK大小约68.6MB
+    - SDK版本警告（SDK XML version 4）可忽略
+
+13.4 修改APK文件名
+    打包后可以直接重命名 app-release.apk
+    如需修改构建输出的文件名前缀，需修改 android/app/build.gradle 中的配置
+
+
+================================================================================
+附录：关键代码位置索引
+================================================================================
+
+【主界面】
+  main.dart 第52行  _checkUpdates()         → 启动时检查更新
+  main.dart 第71行  loadMusics(onProgress)  → 加载音乐
+  main.dart 第105行 checkForCardUpdatesInBackground → 检查卡面更新
+
+【卡牌模块】
+  game_service.dart 第70行   loadCards()                    → 加载卡牌
+  game_service.dart 第131行  checkForCardUpdatesInBackground → 扫描新卡
+  game_service.dart 第228行  _fetchCardData()               → 获取单张卡牌
+  game_service.dart 第334行  稀有度解析逻辑                   → 多种正则匹配
+  game_service.dart 第684行  _saveNewCardsToPrefs()         → 保存新卡
+  game_screen.dart  第55行   _loadGame()                    → 加载新题目
+  game_screen.dart  第85行   _clearPreviousCardCache()      → 清理缓存
+  game_screen.dart  第240行  _buildFragmentImage()          → 碎片图片显示
+
+【音乐模块】
+  music_game_service.dart 第132行 loadMusics()                 → 加载音乐
+  music_game_service.dart 第171行 _checkForUpdatesInBackground → 扫描新歌
+  music_game_service.dart 第303行 _loadMusicsFromPjskMoe()     → 首次全量加载
+  music_game_service.dart 第363行 _fetchMusicData()            → 获取单首歌曲
+  music_game_service.dart 第408行 音频版本检查（vs+se两种）     → 精简后的逻辑
+  music_game_service.dart 第458行 _loadMusicsFromLocal()       → 本地加载
+  music_game_service.dart 第524行 assignCategories()           → 分配分类
+  music_game_screen.dart  第87行  _loadData()                  → 加载数据
+  music_game_screen.dart  第100行 _loadNextMusic()             → 下一题
+  music_game_screen.dart  第186行 _playPreviewClip()           → 播放片段
+  music_game_screen.dart  第639行 _getAllMusicsForDrawer()     → 目录列表（降序）
+
+【MV模块】
+  video_data_service.dart 第53行  loadData()              → 加载数据
+  video_data_service.dart 第133行 getVideoDownloadUrl()   → 获取B站下载URL
+  video_data_service.dart 第159行 downloadVideo()         → 下载视频
+  video_game_screen.dart  第122行 _pickRandomVideo()      → 随机选择
+  video_game_screen.dart  第180行 _playLocalVideo()       → 播放视频
+  video_game_screen.dart  第237行 _pickRandomClipStart()  → 随机片段起始
+  video_game_screen.dart  第256行 _loopClip()             → 循环+淡入淡出
+  video_game_screen.dart  第354行 _nextVideo()            → 下一题+清理缓存
+  video_game_screen.dart  第576行 片段长度滑块(5-20秒)     → UI控件
+
+【常量定义】
+  constants.dart 第1行  PJSK_MOE_BASE_URL    → 'https://pjsk.moe'
+  constants.dart 第2行  PJSK_API_BASE_URL    → 'https://storage.exmeaning.com/sekai-jp-assets'
+  constants.dart 第17行 MUSIC_CATEGORIES     → 7个分类的key→name映射
+  constants.dart 第27行 CHARACTER_ORDER      → 26个角色名列表
+  game_service.dart 第10行 CARD_BASE_URL     → 卡牌图片服务器
+  game_service.dart 第14行 RES_TO_CHARACTER  → resNum→角色名映射
+  music_game_service.dart 第13行 MUSIC_LIST_URL → 音乐列表页面URL
+
+================================================================================
+文档结束
+================================================================================

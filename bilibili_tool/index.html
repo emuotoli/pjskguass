@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B站视频解析下载工具</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📺 B站视频解析下载工具</h1>
+      <p class="subtitle">输入包含哔哩哔哩视频的网页地址，获取封面、信息及下载链接</p>
+    </header>
+
+    <section class="input-section">
+      <div class="input-row">
+        <input type="text" id="urlInput" placeholder="粘贴B站视频网址，例如 https://www.bilibili.com/video/BV1xx411c7mD">
+        <button id="parseBtn" class="btn-primary">解析</button>
+      </div>
+      <div class="examples">
+        <span>试试：</span>
+        <button class="example-link" data-url="https://www.bilibili.com/video/BV1GJ411x7h7">示例1</button>
+        <button class="example-link" data-url="https://b23.tv/BV1GJ411x7h7">示例2</button>
+      </div>
+    </section>
+
+    <section id="statusSection" class="status-section hidden">
+      <div id="statusMsg" class="status-msg"></div>
+    </section>
+
+    <section id="resultSection" class="result-section hidden">
+      <div class="video-card">
+        <div class="cover-wrapper">
+          <img id="videoCover" alt="视频封面" class="video-cover">
+          <span id="durationBadge" class="duration-badge"></span>
+        </div>
+        <div class="video-info">
+          <h2 id="videoTitle" class="video-title"></h2>
+          <div class="info-row">
+            <span class="info-label">UP主：</span>
+            <span id="videoAuthor" class="info-value"></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">BV号：</span>
+            <span id="videoBvid" class="info-value mono"></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">播放量：</span>
+            <span id="videoViews" class="info-value"></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">点赞：</span>
+            <span id="videoLikes" class="info-value"></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">发布时间：</span>
+            <span id="videoDate" class="info-value"></span>
+          </div>
+          <p id="videoDesc" class="video-desc"></p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="downloadCoverBtn" class="btn-secondary">🖼️ 下载封面</button>
+        <button id="copyUrlBtn" class="btn-secondary">📋 复制视频地址</button>
+        <button id="tryDownloadBtn" class="btn-secondary">⬇️ 尝试代理下载</button>
+        <button id="openBiliBtn" class="btn-secondary">🔗 打开原网页</button>
+      </div>
+
+      <div class="player-section">
+        <h3>在线预览（仅视频流，可能无声）</h3>
+        <video id="videoPlayer" controls class="video-player"></video>
+        <p class="player-tip">提示：B站视频流要求 Referer，浏览器原生 video 仅可播放视频流（无声）。完整视频请用下方链接配合 IDM/yt-dlp 下载。</p>
+      </div>
+
+      <div class="streams-section">
+        <h3>📦 可下载流地址</h3>
+        <div id="streamsList" class="streams-list"></div>
+      </div>
+
+      <div class="download-guide">
+        <h3>💡 下载使用说明</h3>
+        <ol>
+          <li><b>直接下载（推荐）</b>：复制视频流地址，使用 <a href="https://github.com/yt-dlp/yt-dlp" target="_blank">yt-dlp</a> 或 IDM 下载（需添加 Referer 头）</li>
+          <li><b>yt-dlp 命令示例</b>：
+            <code>yt-dlp --referer "https://www.bilibili.com" "视频流URL"</code>
+          </li>
+          <li><b>代理下载</b>：点击"尝试代理下载"，通过 CORS 代理中转下载（受代理服务器限制，可能失败）</li>
+          <li><b>合并音视频</b>：DASH 格式下视频和音频分离，可用 ffmpeg 合并：
+            <code>ffmpeg -i video.m4s -i audio.m4s -c copy output.mp4</code>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <footer>
+      <p>仅供学习交流使用，请遵守B站用户协议及相关法律法规</p>
+    </footer>
+  </div>
+
+  <script src="main.js?v=20260805"></script>
+</body>
+</html>

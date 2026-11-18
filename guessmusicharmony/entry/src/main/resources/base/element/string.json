@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Project SEKAI 猜谜游戏"
+    },
+    {
+      "name": "ability_desc",
+      "value": "Project SEKAI 猜谜游戏 - 猜卡面、猜MV、猜音乐"
+    }
+  ]
+}

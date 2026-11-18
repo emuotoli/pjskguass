@@ -1,0 +1,59 @@
+# ============================================================
+# Project SKGUASS - 根目录 .gitignore
+# 原则：保留应用本体与关键代码，排除构建产物/大体积二进制/私密凭证
+# ============================================================
+
+# ---------- 私密凭证（重要！切勿提交）----------
+# 本地 B站 Cookie 凭证文件，模板为 cookies.example.json
+cookies.local.json
+cookies.json
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---------- 构建产物（体积巨大）----------
+# PyInstaller 打包目录与可执行文件
+build/
+dist/
+*.exe
+*.spec.bak
+# Flutter / Dart 构建目录（子项目已有自身 .gitignore，这里再兜底）
+.dart_tool/
+.flutter-plugins-dependencies
+*.iml
+.idea/
+# Gradle / Android 构建缓存
+.gradle/
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+local.properties
+
+# ---------- 大体积媒体文件 ----------
+# 下载的视频素材（89MB+）
+downloaded_videos/
+*.mp4
+# 测试截图目录
+deep_test_images/
+test_images/
+# 根目录的临时截图与歌曲样本（资源已随应用存放在 assets/ 中）
+IMG_*.png
+/*.mp3
+
+# ---------- IDE / 编辑器 ----------
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---------- 日志与临时 ----------
+*.log
+*.tmp
+*.bak

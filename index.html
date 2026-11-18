@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>官方MV合集 - 随机抽选播放器</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        header p {
+            color: #999;
+            font-size: 14px;
+        }
+        .player-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-info {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .video-title {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: #fff;
+            word-break: break-all;
+        }
+        .video-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+            color: #999;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .meta-item span {
+            color: #667eea;
+        }
+        .actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn-pick {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+        .btn-pick:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        .btn-open {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-open:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .btn-copy {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-copy:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .history-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 20px;
+        }
+        .history-section h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #999;
+        }
+        .history-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .history-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .history-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .history-title {
+            flex: 1;
+            font-size: 13px;
+            color: #ccc;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 10px;
+        }
+        .history-bvid {
+            font-size: 12px;
+            color: #667eea;
+            font-family: monospace;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+        .empty-state .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        .empty-state p {
+            font-size: 16px;
+        }
+        .stats {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 14px;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 官方MV合集 - 随机抽选播放器</h1>
+            <p>从476个视频中随机选择一个，直接在界面播放</p>
+        </header>
+
+        <div class="player-section" id="playerSection">
+            <div class="video-container" id="videoContainer">
+                <div class="empty-state">
+                    <div class="icon">🎲</div>
+                    <p>点击下方按钮开始抽选</p>
+                </div>
+            </div>
+            <div class="video-info" id="videoInfo">
+                <div class="video-title" id="videoTitle">等待抽选...</div>
+                <div class="video-meta">
+                    <div class="meta-item">
+                        <span>📺</span>
+                        <span id="videoBvid">BVID: </span>
+                    </div>
+                    <div class="meta-item">
+                        <span>⏱️</span>
+                        <span id="videoDuration">时长: </span>
+                    </div>
+                    <div class="meta-item">
+                        <span>🎯</span>
+                        <span id="videoCount">已抽选: 0 / 476</span>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-pick" onclick="pickRandom()">🎲 随机抽选</button>
+                    <button class="btn btn-open" onclick="openVideo()" id="btnOpen" disabled>🔗 在B站打开</button>
+                    <button class="btn btn-copy" onclick="copyBvid()" id="btnCopy" disabled>📋 复制BVID</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-section">
+            <h3>📜 抽选历史</h3>
+            <div class="history-list" id="historyList">
+                <div class="empty-state" style="padding: 30px 20px;">
+                    <p>暂无抽选记录</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script>
+        const videos = [];
+        let currentVideo = null;
+        let pickedHistory = [];
+
+        async function loadVideos() {
+            try {
+                const response = await fetch('bilibili_mv_videos.json');
+                const data = await response.json();
+                videos.push(...data);
+                console.log(`Loaded ${videos.length} videos`);
+            } catch (error) {
+                console.error('Failed to load videos:', error);
+                showToast('加载视频数据失败');
+            }
+        }
+
+        function formatDuration(seconds) {
+            if (!seconds) return '未知';
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        function pickRandom() {
+            if (videos.length === 0) {
+                showToast('视频数据加载中...');
+                return;
+            }
+
+            const randomIndex = Math.floor(Math.random() * videos.length);
+            currentVideo = videos[randomIndex];
+            pickedHistory.push(currentVideo);
+
+            playVideo(currentVideo);
+            updateInfo(currentVideo);
+            updateHistory();
+
+            document.getElementById('btnOpen').disabled = false;
+            document.getElementById('btnCopy').disabled = false;
+        }
+
+        function playVideo(video) {
+            const container = document.getElementById('videoContainer');
+            container.innerHTML = `
+                <iframe 
+                    src="https://player.bilibili.com/player.html?bvid=${video.bvid}&page=1&high_quality=1&danmaku=1"
+                    allowfullscreen
+                    frameborder="0"
+                ></iframe>
+            `;
+        }
+
+        function updateInfo(video) {
+            document.getElementById('videoTitle').textContent = video.title;
+            document.getElementById('videoBvid').textContent = `BVID: ${video.bvid}`;
+            document.getElementById('videoDuration').textContent = `时长: ${formatDuration(video.duration)}`;
+            document.getElementById('videoCount').textContent = `已抽选: ${pickedHistory.length} / ${videos.length}`;
+        }
+
+        function updateHistory() {
+            const list = document.getElementById('historyList');
+            
+            if (pickedHistory.length === 0) {
+                list.innerHTML = '<div class="empty-state" style="padding: 30px 20px;"><p>暂无抽选记录</p></div>';
+                return;
+            }
+
+            list.innerHTML = pickedHistory.slice().reverse().map((video, index) => `
+                <div class="history-item" onclick="playHistory(${pickedHistory.length - 1 - index})">
+                    <span class="history-title">${video.title}</span>
+                    <span class="history-bvid">${video.bvid}</span>
+                </div>
+            `).join('');
+        }
+
+        function playHistory(index) {
+            const video = pickedHistory[index];
+            currentVideo = video;
+            playVideo(video);
+            updateInfo(video);
+        }
+
+        function openVideo() {
+            if (currentVideo) {
+                window.open(`https://www.bilibili.com/video/${currentVideo.bvid}`, '_blank');
+            }
+        }
+
+        function copyBvid() {
+            if (currentVideo) {
+                navigator.clipboard.writeText(currentVideo.bvid).then(() => {
+                    showToast('BVID已复制到剪贴板');
+                }).catch(() => {
+                    showToast('复制失败');
+                });
+            }
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+
+        loadVideos();
+    </script>
+</body>
+</html>

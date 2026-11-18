@@ -1,0 +1,153 @@
+{
+  "api_url": "https://api.bilibili.com/x/polymer/web-space/seasons_series_list",
+  "params": {
+    "mid": 13148307,
+    "page_size": 20,
+    "page_num": 1,
+    "web_location": 333.1387
+  },
+  "total_collections": 39,
+  "collections": [
+    {
+      "name": "官方MV合集（正在返工修改标题）",
+      "season_id": 1547037,
+      "total_videos": 476,
+      "cover": "https://archive.biliimg.com/bfs/archive/8124dc7cd77ab0a188884ee923b5ba71f32e3d12.jpg",
+      "description": "以MV的官方投稿时间排序。\n旧版合集请见：\n2DMV合集 BV1b54y117oM\n3DMV合集 BV1uT4y1L7iq",
+      "recent_videos": 6
+    },
+    {
+      "name": "短视频小零食合集",
+      "season_id": 4437803,
+      "total_videos": 194,
+      "cover": "https://archive.biliimg.com/bfs/archive/76090e67617df1b1b940398b5ea64778613cfc92.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "PJS字幕组剧情合集",
+      "season_id": 4504686,
+      "total_videos": 407,
+      "cover": "https://archive.biliimg.com/bfs/archive/f88563c2699a06f342f5dd90cecd942c384e2064.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "官方直播回放合集（3周年起）",
+      "season_id": 1814263,
+      "total_videos": 179,
+      "cover": "https://archive.biliimg.com/bfs/archive/e24111b79ea4e5c523d170f929725daa11052c15.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "官方高难度谱面预览视频（前面有些缺的就不补了）",
+      "season_id": 1897754,
+      "total_videos": 33,
+      "cover": "https://archive.biliimg.com/bfs/archive/50b125df99997666ccd54cceab2de8090ece4fb4.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "主题原创曲预告",
+      "season_id": 1910477,
+      "total_videos": 150,
+      "cover": "https://archive.biliimg.com/bfs/archive/2f8de731f7c5150ef4f6315dfa0eb4773cedac6e.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "原创曲串烧／原声带",
+      "season_id": 1999107,
+      "total_videos": 8,
+      "cover": "https://archive.biliimg.com/bfs/archive/954b0c65dac544cf94362457ee25fbf42a227ff9.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "动画电影『崩坏的世界与无法歌唱的初音未来』",
+      "season_id": 3915473,
+      "total_videos": 30,
+      "cover": "https://archive.biliimg.com/bfs/archive/804bfc2269a868529adfe580504952de3d0ad8b1.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "【PJS字幕组】SEKAI的游戏日常",
+      "season_id": 2024448,
+      "total_videos": 10,
+      "cover": "https://archive.biliimg.com/bfs/archive/b2088e74dab7246cb0c08537df4f5f6c19c55d33.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "【PJS字幕组】SEKAI STATION（SEKAI电台）",
+      "season_id": 595398,
+      "total_videos": 5,
+      "cover": "https://archive.biliimg.com/bfs/archive/25ec1288306c7c332e79c3a3c4615e4e7ba4d9c1.jpg",
+      "recent_videos": 5
+    },
+    {
+      "name": "家园系统「我的SEKAI」",
+      "season_id": 4353157,
+      "total_videos": 7,
+      "cover": "https://archive.biliimg.com/bfs/archive/b05de09a377b202f23a54471b0518d9e943aa38e.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "音游锦标赛（2021年锦标赛在展览会合集里）",
+      "season_id": 4314163,
+      "total_videos": 11,
+      "cover": "https://archive.biliimg.com/bfs/archive/c29d793213ef2b3e429c7f39a8413aa6f66eaeb3.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "4周年纪念 AnVo合集",
+      "season_id": 3926734,
+      "total_videos": 30,
+      "cover": "https://archive.biliimg.com/bfs/archive/59ef74554a75d747bd4a3f72120655d4aa87edc8.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "Connect Live预告",
+      "season_id": 1574691,
+      "total_videos": 6,
+      "cover": "https://archive.biliimg.com/bfs/archive/76cbb7184b73c5fb58c049a08e717524e06965dd.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "セカイシンフォニー SEKAI SYMPHONY 摘要",
+      "season_id": 1919849,
+      "total_videos": 2,
+      "cover": "https://archive.biliimg.com/bfs/archive/fe9503f23256d1c50fa97893495c92ed534d1e0a.jpg",
+      "recent_videos": 2
+    },
+    {
+      "name": "【PJS字幕组】Vivid BAD SQUAD Archives【已完结】",
+      "season_id": 334096,
+      "total_videos": 8,
+      "cover": "https://archive.biliimg.com/bfs/archive/a15b73fd5b2574684d6343bc637a5cb7f16d1dd2.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "【PJS字幕组】角色自我介绍 3周年版【已完结】",
+      "season_id": 1823482,
+      "total_videos": 26,
+      "cover": "https://archive.biliimg.com/bfs/archive/fa7997d7a945d784daa1d92279bc276e2ae89711.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "【PJS字幕组】3周年纪念 主线剧情短篇动画【已完结】",
+      "season_id": 1759318,
+      "total_videos": 5,
+      "cover": "https://archive.biliimg.com/bfs/archive/28a09586fd64ceb198afa2f615377f6f1df94341.jpg",
+      "recent_videos": 5
+    },
+    {
+      "name": "【PJS字幕组】Connect Live 前日谈",
+      "season_id": 1513993,
+      "total_videos": 7,
+      "cover": "https://archive.biliimg.com/bfs/archive/58afaa9d1ad86190033ddba70668c5567d55ad82.jpg",
+      "recent_videos": 6
+    },
+    {
+      "name": "【PJS字幕组】3周年倒计时登陆剧情【已完结】",
+      "season_id": 1750887,
+      "total_videos": 6,
+      "cover": "https://archive.biliimg.com/bfs/archive/b0a891a2d9a60842d23f5cf97fe08fd9bd882f93.jpg",
+      "recent_videos": 6
+    }
+  ]
+}
